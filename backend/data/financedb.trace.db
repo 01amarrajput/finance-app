@@ -1,0 +1,12 @@
+2026-04-03 00:04:39.479028+05:30 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT FORMATDATETIME(date, 'yyyy-MM') AS [*]month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month"; expected "identifier"; SQL statement:
+SELECT FORMATDATETIME(date, 'yyyy-MM') AS month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month [42001-224]
+2026-04-03 00:05:08.577949+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT FORMATDATETIME(date, 'yyyy-MM') AS [*]month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month"; expected "identifier"; SQL statement:
+SELECT FORMATDATETIME(date, 'yyyy-MM') AS month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month [42001-224]
+2026-04-03 00:05:36.683385+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT FORMATDATETIME(date, 'yyyy-MM') AS [*]month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month"; expected "identifier"; SQL statement:
+SELECT FORMATDATETIME(date, 'yyyy-MM') AS month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month [42001-224]
+2026-04-03 00:19:44.441993+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT FORMATDATETIME(date, 'yyyy-MM') AS [*]month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month"; expected "identifier"; SQL statement:
+SELECT FORMATDATETIME(date, 'yyyy-MM') AS month, type, SUM(amount) AS total FROM financial_records WHERE deleted = false AND date >= ? GROUP BY FORMATDATETIME(date, 'yyyy-MM'), type ORDER BY month [42001-224]

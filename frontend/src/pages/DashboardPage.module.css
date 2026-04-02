@@ -1,0 +1,65 @@
+.page { animation: fadeUp .35s ease both; }
+
+.header { margin-bottom: 28px; }
+.title  { font-family: var(--font-head); font-size: 1.8rem; font-weight: 800; }
+.subtitle { font-size: .8rem; color: var(--muted); }
+
+/* KPI cards */
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+.kpi {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 24px;
+  animation: fadeUp .35s ease both;
+  position: relative;
+  overflow: hidden;
+}
+.kpi::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent-color, var(--accent));
+  border-radius: 14px 14px 0 0;
+}
+.kpiIcon  { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; }
+.kpiValue { font-family: var(--font-head); font-size: 1.5rem; font-weight: 800; margin-bottom: 4px; }
+.kpiLabel { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+/* Charts */
+.charts { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.chartCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px 20px;
+}
+.chartTitle {
+  font-family: var(--font-head);
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* Recent activity table */
+.recent { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+.sectionTitle { font-family: var(--font-head); font-size: .95rem; font-weight: 700; padding: 18px 20px 14px; border-bottom: 1px solid var(--border); }
+.table { overflow-x: auto; }
+.thead, .trow {
+  display: grid;
+  grid-template-columns: 110px 1fr 90px 140px 1fr;
+  gap: 12px;
+  padding: 10px 20px;
+  font-size: .8rem;
+  align-items: center;
+}
+.thead { background: var(--surface2); color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+.trow { border-top: 1px solid var(--border); transition: background .12s; }
+.trow:hover { background: var(--surface2); }
+.income  { color: var(--income); }
+.expense { color: var(--expense); }
+.mono    { font-family: var(--font-mono); }
+.muted   { color: var(--muted); font-size: .78rem; }
+.error   { color: var(--danger); padding: 20px; }
